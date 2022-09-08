@@ -1,8 +1,6 @@
-
-
 body {
   box-sizing: border-box;
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   background: #e5e5e5;
 }
 
@@ -33,7 +31,7 @@ body {
 .main {
   box-sizing: border-box;
   background: #fff;
-  background-image: url('./images/bg-mobile1.svg');
+  background-image: url("./images/bg-mobile1.svg");
   background-repeat: no-repeat;
   background-size: contain;
   padding-left: 24px;
@@ -51,7 +49,6 @@ body {
   line-height: 52px;
   padding-top: 120px;
   color: #091e42;
- 
 }
 
 @keyframes slideIn {
@@ -97,7 +94,6 @@ ul {
   padding-left: 0;
 }
 
-
 .mobile-nav {
   position: absolute;
   top: 0;
@@ -136,8 +132,6 @@ ul {
 .empty-space {
   visibility: hidden;
 }
-
-
 
 .works-wrapper {
   display: grid;
@@ -273,8 +267,6 @@ ul {
   color: #396df2;
 }
 
-
-
 .about-container {
   box-sizing: border-box;
   width: 100%;
@@ -371,8 +363,6 @@ a {
   border-radius: 8px;
 }
 
-
-
 .language-list .javascript:hover,
 .language-list .html:hover,
 .language-list .css:hover {
@@ -431,7 +421,6 @@ button:disabled {
   color: #5e6c84;
 }
 
-
 .contact-wrapper {
   width: 100%;
   height: 779px;
@@ -439,7 +428,7 @@ button:disabled {
   z-index: 1;
   margin-top: -200px;
   border-radius: 100px 0 0 0;
-  background-image: url('./images/bg-contact-mobile.svg');
+  background-image: url("./images/bg-contact-mobile.svg");
   background-repeat: no-repeat;
   background-position-x: 153px;
 }
@@ -473,7 +462,7 @@ button:disabled {
 }
 
 input {
-  font-family: 'poppins', sans-serif;
+  font-family: "poppins", sans-serif;
   font-weight: 400;
   font-size: 17px;
   line-height: 20px;
@@ -529,9 +518,7 @@ textarea {
   background: #0d151e;
 }
 
-
 .popup-container {
- 
   position: fixed;
   top: 0;
   bottom: 0;
@@ -597,7 +584,7 @@ Media query for desktop version at 768px
   }
 
   .main {
-    background-image: url('./images/bg-desktop-pg1.svg');
+    background-image: url("./images/bg-desktop-pg1.svg");
     background-repeat: no-repeat;
     background-size: contain;
     margin-top: 0;
@@ -676,8 +663,6 @@ Media query for desktop version at 768px
     display: none;
   }
 
-  
-
   .about-container {
     width: 100%;
     height: 924px;
@@ -728,10 +713,8 @@ Media query for desktop version at 768px
     padding-top: 114px;
   }
 
-  
-
   .contact-wrapper {
-    background-image: url('./images/bg-contact-desktop.svg');
+    background-image: url("./images/bg-contact-desktop.svg");
     background-repeat: no-repeat;
     background-size: contain;
     background-position: 10% 100%;
@@ -750,8 +733,6 @@ Media query for desktop version at 768px
   .form-items {
     align-items: center;
   }
-
-
 
   .popup-container {
     position: fixed;

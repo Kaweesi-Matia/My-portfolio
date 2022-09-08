@@ -1,5 +1,3 @@
-
-
 const mobileMenu = document.getElementById('mobile-menu');
 
 function showMobileMenu() {
@@ -13,8 +11,6 @@ function exitMobileMenu() {
   mobileMenu.style.display = 'none';
 }
 exitMobileMenu();
-
-
 
 const worksData = [
   {
@@ -104,7 +100,6 @@ const worksData = [
     sourceLink: '#',
   },
 ];
-
 
 const myPortfolio = document.querySelector('.works-wrapper');
 const displayWorksData = worksData.map((works, index) => `<div class="card1-container">
@@ -216,4 +211,3 @@ seeProject1.onclick = openPopUp;
 seeProject2.onclick = openPopUp;
 seeProject3.onclick = openPopUp;
 seeProject4.onclick = openPopUp;
-
