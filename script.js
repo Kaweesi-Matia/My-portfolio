@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 
 
 const mobileMenu = document.getElementById('mobile-menu');
@@ -219,4 +217,3 @@ seeProject2.onclick = openPopUp;
 seeProject3.onclick = openPopUp;
 seeProject4.onclick = openPopUp;
 
->>>>>>> f59f3356ce27f044195429c1e220a83079607cb8
