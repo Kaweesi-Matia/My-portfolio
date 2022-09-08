@@ -1,0 +1,195 @@
+<<<<<<< HEAD
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="toolbar">
+      <a href="#" >
+      <img src="./images/my-logo.svg" alt="my logo" class="my-logo">
+      </a>
+      <nav>
+         <a href="#" onclick="showMobileMenu()">
+            <img 
+            src="./images/hamburger.svg" 
+            alt="hamburger menu"
+            class="hamburger-img" id="hamburger">
+            </a>
+         <ul class="desktop-menu">
+            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+      </header>
+         <section class="main">
+            <header>
+               <h1 class="headline">I'm Kaweesi <br>Glad to see you!</h1>
+               <p class="desc">
+                  I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+               </p>
+               <p class="connect-msg">LET'S CONNECT</p>
+            </header>
+              <ul class="social-icons">
+                 <li><a href="#">
+                  <img src="./images/twitter.svg" alt="twitter handle">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="./images/linkedin.svg" alt="linkedin handle">
+                     </a></li>
+                     <li><a href="#">
+                        <img src="./images/medium.svg" alt="another social handle">
+                        </a></li>
+                        <li><a href="#">
+                           <img src="./images/github.svg" alt="github handle">
+                           </a></li>
+                        <li>  <a href="#">
+                         <img src="./images/angel-list.svg" alt="social handle">
+                             </a></li>
+              </ul>
+           </section>
+
+           <!-- hamburg-menu overlay -->
+         <div class="mobile-nav" id="mobile-menu">
+            <div class="close-icon" >
+               <a href="#" onclick="exitMobileMenu()">
+                  <img 
+                  src="./images/close.svg" 
+                  alt="hamburger close"
+                  class="close-img" id="close" >
+                  </a>
+            </div>
+            <nav class="overlay-menu" onclick="exitMobileMenu()">
+              <a href="#portfolio">
+                  <p>Portfolio</p>
+               </a>
+               <a href="#about">
+                  <p>About</p>
+               </a>
+               <a href="#contact">
+                  <p>Contact</p>
+               </a>
+            </nav>
+            <div class="empty-space">
+               <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p> 
+            </div>
+            <hr class="end-line">
+         </div>
+
+       <!-- works section -->
+       <section class="works-wrapper" id="portfolio">
+       </section>
+
+      <!-- About section -->
+      <section>
+         <div class="about-container" id="about">
+            <div class="about-section">
+               <div class="about-block1">
+                  <h1 class="about-title">About <br>Myself</h1>
+                  <p class="about-desc">
+                     Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                  </p>
+                  <p class="connect-msg">LET'S CONNECT</p>
+                  <div class="social-icons">
+                     <a href="#">
+                        <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#">
+                           <img src="./images/linkedin.svg" alt="linkedin  ">
+                           </a>
+                           <a href="#">
+                              <img src="./images/medium.svg" alt="medium">
+                              </a>
+                              <a href="#">
+                                 <img src="./images/github.svg" alt="github handle ">
+                                 </a>
+                                 <a href="#">
+                                    <img src="./images/angel-list.svg" alt="AngelList handle">
+                                    </a> 
+                  </div>
+                  <button class="resume-btn">Get my resume</button>
+               </div>
+               <div class="about-block2">
+                  <div class="language-menu">
+                     <p class="language-txt">Languages</p>
+                     <a href="#">
+                        <img src="./images/down-arrow.svg" alt="menu arrow ">
+                     </a>
+                  </div>
+                  <div class="language-list">
+                     <div class="tech-lang">
+                        <div class="javascript">
+                           <a href="#">
+                              <img src="./images/javascript-icon.svg" alt="javascript">
+                           </a>
+                           <p>JavaScript</p>
+                        </div>
+                        <div class="html">
+                           <a href="#">
+                              <img src="./images/html.svg" alt="html">
+                           </a>
+                           <p>HTML</p>
+                        </div>
+                        <div class="css">
+                           <a href="#">
+                              <img src="./images/css-icon.svg" alt="css">
+                           </a>
+                           <p>CSS</p>
+                        </div>
+                     </div>
+                     <div class="frameworks">
+                        <p>Frameworks</p>
+                        <img src="./images/next-arrow.svg" alt="next menu">
+                     </div>
+                     <div class="skills">
+                        <p>Skills</p>
+                        <img src="./images/next-arrow.svg" alt="next menu skill">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </section>
+
+      <!-- Contact form-->
+   <footer>
+      <div class="contact-wrapper" id="contact">
+         <div class="contact-section">
+            <h1 class="contact-title">Contact me</h1>
+            <p class="contact-desc">
+               If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
+            </p>
+            <form action="https://formspree.io/f/xbjbldyw" method="post" id="contact-form">
+               <div class="form-items">
+                  <label for="name">
+                     <input type="text" id="name" placeholder="User name" maxlength="30" required>
+                  </label>
+                  <label for="mail">
+                     <input type="email" id="mail" placeholder="User email Address" required>
+                  </label>
+                  <label for="message">
+                     <textarea name="user_msg" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
+                  </label>
+                  <span class="error-msg"></span>
+                  <button type="submit" class="contact-btn">Get in Touch</button>
+               </div>
+            </form>
+         </div>
+         <hr class="end-line">
+         </div>
+      </footer>
+
+      <!-- Here begins the popup window -->
+      <div class="popup-container" id="popup">
+         </div>
+         
+<script src="./script.js"></script>
+</body>
+</html>
+>>>>>>> f59f3356ce27f044195429c1e220a83079607cb8
