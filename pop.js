@@ -43,7 +43,7 @@ const projectCards = [
     card: 1,
     name: 'Tonic',
     name2: 'Tonic',
-    image: '',
+    image: 'images/snap.png',
     image2: 'images/tonic1.png',
     description: `A daily selection of privately personalized reads; no accounts or
                               sign-ups required.`,
