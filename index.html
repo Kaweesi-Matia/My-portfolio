@@ -1,292 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css" integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
-
-    <link
-      href="https://fonts.googleapis.com/css?family=Poppins"
-      rel="stylesheet"
-    />
-    <title>My portifolio</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
-    <div class="wrapper">
-      <div class="wrapper1">
-        <header>
-          <div class="logo"><a href="index.html">My Logo</a></div>
-
-          
-            <nav>
-              
-              <button id="menu11" onclick="openMenu()"  ><img id="menu1" src="images/menu2.png" alt="menu" /></button>
-              <ul id="menu2">
-                <li><a href="" >Portfolio </a></li>
-  
-                <li><a    href="#abouts">About </a></li>
-  
-                <li><a href="#contacts">Contact </a></li>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <header class="toolbar">
+      <a href="#" >
+      <img src="./images/my-logo.svg" alt="my logo" class="my-logo">
+      </a>
+      <nav>
+         <a href="#" onclick="showMobileMenu()">
+            <img 
+            src="./images/hamburger.svg" 
+            alt="hamburger menu"
+            class="hamburger-img" id="hamburger">
+            </a>
+         <ul class="desktop-menu">
+            <li class="portfolio"><a href="#portfolio">Portfolio</a></li>
+            <li class="about"><a href="#about">About</a></li>
+            <li class="contact"><a href="#contact">Contact</a></li>
+         </ul>
+      </nav>
+      </header>
+         <section class="main">
+            <header>
+               <h1 class="headline">I'm Kaweesi <br>Glad to see you!</h1>
+               <p class="desc">
+                  I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+               </p>
+               <p class="connect-msg">LET'S CONNECT</p>
+            </header>
+              <ul class="social-icons">
+                 <li><a href="#">
+                  <img src="./images/twitter.svg" alt="twitter handle">
+                  </a></li>
+                  <li><a href="#">
+                     <img src="./images/linkedin.svg" alt="linkedin handle">
+                     </a></li>
+                     <li><a href="#">
+                        <img src="./images/medium.svg" alt="another social handle">
+                        </a></li>
+                        <li><a href="#">
+                           <img src="./images/github.svg" alt="github handle">
+                           </a></li>
+                        <li>  <a href="#">
+                         <img src="./images/angel-list.svg" alt="social handle">
+                             </a></li>
               </ul>
-              
-              <ul id="menu3" class="menu3" >
-                
-                <li id="noMenu"><i class="fa fa-times" onclick="closeMenu()"></i></li>
-              
-                <li><a href="#tonicx" onclick="closeMenu()" class="noMenu1">Portfolio </a></li>
-                <li><a href="#abouts" onclick="closeMenu()" class="noMenu1">About </a></li>
-                <li><a href="#contacts" onclick="closeMenu()" class="noMenu1">Contact </a></li></ul>
+           </section>
 
-         
-           
-            
-          </nav>
-        </header>
-        <div class="details">
-          <h1>I'm Kaweesi Glad to see you!</h1>
-          <p>
-            I’m a software developer! I can help you build a product , feature
-            or website Look through some of my work and experience! If you like
-            what you see and have a project you need coded, don’t hestiate to
-            contact me.
-          </p>
-          <a id="connect" href="index.html">LET'S CONNECT</a>
-          <ul class="details-list1">
-            <li>
-              <a href=""> <img src="images/twitter.png" alt="Twitter" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/Linkedin.png" alt="LinkedIn" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/medium.png" alt="Media" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/Vector-1.png" alt="image" /></a>
-            </li>
-            <li>
-              <a href=""> <img src="images/Vector-3.png" alt="image" /></a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="wrapper2">
-        
-        
-
-        <div id="portfolio" class="works"></div>
-
-        <!-- desktop popup -->
-        <div id="sectionWrap" class="modal">
-          <section class="desktop">
-           <div class="desktopIntro"> <h2 class="deskHeading"></h2>
-            <ul class="deskButtons">
-              <li class="deskList1"  ></li>
-              <li class="deskList2"></li>
-              <li  class="deskList3"></li>
-            </ul>
-            <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
-           </div>
-            <div><img src="/images/snap3.png" class="deskImag" alt="project-image"></div>          
-            <div class="desktopFlex">
-            <p class="deskpara"></p>
-            <aside>
-            <ul class="deskButtonlist">
-                           
-            </ul>
-            <div class="liner"></div>
-            <div class="separater">
-            <div class="seeLive">
-           <a href="" id="liveLink"> see Live  <img src="images/live.png" alt="github pages"> </a></div>
-           <div class="seeSource">
-            <a href="" id="sourceLink"> See Source <img src="images/vect1.png" alt="github"> </a></div></div>
-          </aside></div>
-          </section>
-        </div>
-
-
-
-  <!-- mobile popup -->
-  <div id="mobileWrap" class="modal">
-    <section class="mobileDetail">
-     <div class="mobileIntro"> <h2 class="mobileHeading"></h2>
-      <ul class="mobileButtons">
-        <li class="mobList1"  ></li>
-        <li class="mobList2"></li>
-        <li  class="mobList3"></li>
-        
-      </ul>
-      <div class="closeProj"><i class="fa fa-times" onclick="closeall()"></i></div>
-     </div>
-      <div><img src="images/" class="mobImag" alt="project-image"></div>          
-      <div class="mobileFlex">
-      <p class="mobilepara"></p>
-      <aside>
-      <ul class="mobButtonlist">
-     
-                    
-      </ul>
-      <div class="linerMobile"></div>
-      <div class="separaterMob">
-      <div class="seeLiveMob">
-     <a href="" id="liveLinkM"> see Live <img src="images/live.png" alt="github pages"> </a></div>
-     <div class="seeSource">
-      <a href="" id="sourceLinkM"> See Source <img src="images/vect1.png" alt="github"> </a></div></div>
-    </aside></div>
-    </section>
-  </div>
-  <!-- mobile popup -->
-      <div class="abt">
-        <div class="about" id="abouts">
-          <div class="content-left">
-            <div>
-              <h2>About</h2>
-              <h2>Myself</h2>
+           <!-- hamburg-menu overlay -->
+         <div class="mobile-nav" id="mobile-menu">
+            <div class="close-icon" >
+               <a href="#" onclick="exitMobileMenu()">
+                  <img 
+                  src="./images/close.svg" 
+                  alt="hamburger close"
+                  class="close-img" id="close" >
+                  </a>
             </div>
+            <nav class="overlay-menu" onclick="exitMobileMenu()">
+              <a href="#portfolio">
+                  <p>Portfolio</p>
+               </a>
+               <a href="#about">
+                  <p>About</p>
+               </a>
+               <a href="#contact">
+                  <p>Contact</p>
+               </a>
+            </nav>
+            <div class="empty-space">
+               <p>.</p><p>.</p><p>.</p><p>.</p><p>.</p><p>.</p> 
+            </div>
+            <hr class="end-line">
+         </div>
 
-            <p>
-              Hello I’m a software developer! I can help you build a product ,
-              feature or website Look through some of my work and experience! If
-              you like what you see and have a project you need coded, don’t
-              hestiate to contact me.
+       <!-- works section -->
+       <section class="works-wrapper" id="portfolio">
+       </section>
+
+      <!-- About section -->
+      <section>
+         <div class="about-container" id="about">
+            <div class="about-section">
+               <div class="about-block1">
+                  <h1 class="about-title">About <br>Myself</h1>
+                  <p class="about-desc">
+                     Hello I’m a software developer! I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, don’t hestiate to contact me.
+                  </p>
+                  <p class="connect-msg">LET'S CONNECT</p>
+                  <div class="social-icons">
+                     <a href="#">
+                        <img src="./images/twitter.svg" alt="twitter">
+                        </a>
+                        <a href="#">
+                           <img src="./images/linkedin.svg" alt="linkedin  ">
+                           </a>
+                           <a href="#">
+                              <img src="./images/medium.svg" alt="medium">
+                              </a>
+                              <a href="#">
+                                 <img src="./images/github.svg" alt="github handle ">
+                                 </a>
+                                 <a href="#">
+                                    <img src="./images/angel-list.svg" alt="AngelList handle">
+                                    </a> 
+                  </div>
+                  <button class="resume-btn">Get my resume</button>
+               </div>
+               <div class="about-block2">
+                  <div class="language-menu">
+                     <p class="language-txt">Languages</p>
+                     <a href="#">
+                        <img src="./images/down-arrow.svg" alt="menu arrow ">
+                     </a>
+                  </div>
+                  <div class="language-list">
+                     <div class="tech-lang">
+                        <div class="javascript">
+                           <a href="#">
+                              <img src="./images/javascript-icon.svg" alt="javascript">
+                           </a>
+                           <p>JavaScript</p>
+                        </div>
+                        <div class="html">
+                           <a href="#">
+                              <img src="./images/html.svg" alt="html">
+                           </a>
+                           <p>HTML</p>
+                        </div>
+                        <div class="css">
+                           <a href="#">
+                              <img src="./images/css-icon.svg" alt="css">
+                           </a>
+                           <p>CSS</p>
+                        </div>
+                     </div>
+                     <div class="frameworks">
+                        <p>Frameworks</p>
+                        <img src="./images/next-arrow.svg" alt="next menu">
+                     </div>
+                     <div class="skills">
+                        <p>Skills</p>
+                        <img src="./images/next-arrow.svg" alt="next menu skill">
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </section>
+
+      <!-- Contact form-->
+   <footer>
+      <div class="contact-wrapper" id="contact">
+         <div class="contact-section">
+            <h1 class="contact-title">Contact me</h1>
+            <p class="contact-desc">
+               If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
             </p>
-
-            <a id="connect1" href="index.html">LET'S CONNECT</a>
-            <ul class="details-list">
-              <li>
-                <a href=""> <img src="images/twitter.png" alt="Twitter" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/Linkedin.png" alt="LinkedIn" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/Vector-3.png" alt="image" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/Vector-1.png" alt="image" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/medium.png" alt="Media" /></a>
-              </li>
-            </ul>
-
-            <div class="hidden4">
-              <button>Get my resume</button>
-            </div>
-          </div>
-          <div class="content-right">
-            <div class="language">
-              <div id="profiler"><a href="">Languages</a></div>
-
-              <a href="">
-                <img id="language" src="images/arrow11.png" alt="languages"
-              /></a>
-            </div>
-
-            <ul class="languages">
-              <li>
-                <a href=""> <img src="images/js.png" alt="JavaScript" /> </a>
-              </li>
-              <li>
-                <a href=""> <img src="images/html.png" alt="Html" /></a>
-              </li>
-              <li>
-                <a href=""> <img src="images/css.png" alt="css" /></a>
-              </li>
-            </ul>
-            <div class="languages1">
-              <ul>
-                <li>
-                  <a href=""> <img src="images/js2.png" alt="JavaScript" /> </a>
-                </li>
-                <li>
-                  <a href=""> <img src="images/html2.png" alt="Html" /></a>
-                </li>
-                <li>
-                  <a href=""> <img src="images/css2.png" alt="css" /></a>
-                </li>
-              </ul>
-            </div>
-            <ul class="frame-skill">
-              <li>
-                <div id="profiler1"><a href="">Frameworks</a></div>
-
-                <a href=""
-                  ><img id="fram" src="images/arrow22.png" alt="frameworks"
-                /></a>
-              </li>
-              <li>
-                <div id="profiler2"><a href="index.html">Skills</a></div>
-                <a href=""
-                  ><img id="skill" src="images/arrow22.png" alt="skills"
-                /></a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <footer>
-          <div class="contact-form" id="contacts">
-            <h2>Contact Me</h2>
-            <div class="parag">
-              <p>
-                If you have an application you are interested in developing, a
-                feature that you need built or a project that needs coding.I'd
-                love to help with it.
-              </p>
-            </div>
-            <form
-              action="https://formspree.io/f/mgedkqkj"
-              method="post"
-              autocomplete="off"
-            >
-              <div class="data1">
-                <input
-                  name="Name"
-                  type="text"
-                  placeholder="Full name"
-                  required
-                  maxlength="30"
-                />
-                <br />
-                <input
-                  name="email"
-                  type="email"
-                  id="email"
-                  placeholder="Emailaddress@gmail.com"
-                  required
-                /><br />
-
-                <textarea
-                  name="Message"
-                  class="textarea"
-                  cols="30"
-                  rows="10"
-                  placeholder="write your message here"
-                  maxlength="500"
-                  required
-                ></textarea
-                ><br />
-              </div>
-              <p id="emailErr"> </p>
-              <button type="submit">Get in touch</button>
-
-              <br />
-              <div id="mark"></div>
-              <br />
+            <form action="https://formspree.io/f/xbjbldyw" method="post" id="contact-form">
+               <div class="form-items">
+                  <label for="name">
+                     <input type="text" id="name" placeholder="User name" maxlength="30" required>
+                  </label>
+                  <label for="mail">
+                     <input type="email" id="mail" placeholder="User email Address" required>
+                  </label>
+                  <label for="message">
+                     <textarea name="user_msg" id="message" cols="30" rows="10" maxlength="500" placeholder="Write your message here" required></textarea>
+                  </label>
+                  <span class="error-msg"></span>
+                  <button type="submit" class="contact-btn">Get in Touch</button>
+               </div>
             </form>
-          </div>
-        </footer>
-      </div>
-    </div>
-    </div>
-    
+         </div>
+         <hr class="end-line">
+         </div>
+      </footer>
 
-    <script src="script.js"></script>
-    <script src="pop.js"></script>
-    
-
-  </body>
+      <!-- Here begins the popup window -->
+      <div class="popup-container" id="popup">
+         </div>
+         
+<script src="./script.js"></script>
+</body>
 </html>
