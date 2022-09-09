@@ -1,12 +1,28 @@
 # Portifolio_popup
 
 
-This project is about creating a mobile view of my personal portifolio
+This project is about creating a mobile and desktop view of my personal portifolio that is assigned by microverse. 
+
+## Live Demo Link
+
+- [Kaweesi-Matia Portfolio](https://github.com/Kaweesi-Matia/mobile_website.git)
 
 ## Built with
 
--HTML
--CSS
+- HTML
+- CSS
+- Javascript
+
+### Features
+
+-Project Work Area
+-Contact Form
+-About
+-Popup Window
+-Hamburg Mobile Menu
+-Animation and Transistion 
+-Beautiful Background Images
+-Form Validation
 
 ## setup to access the project
 
