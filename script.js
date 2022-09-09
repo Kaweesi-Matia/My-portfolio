@@ -26,9 +26,12 @@ const worksData = [
       screenshotDesktop: './images/snapshot-desktop1.svg',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      descMobile:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descDesktop:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descPopup:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     skills: ['html', 'css', 'javascript'],
     liveLink: '#',
@@ -48,9 +51,12 @@ const worksData = [
       screenshotDesktop: './images/snapshot-desktop2.svg',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      descMobile:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descDesktop:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descPopup:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     skills: ['html', 'css', 'javascript'],
     liveLink: '#',
@@ -69,9 +75,12 @@ const worksData = [
       screenshotDesktop: './images/snapshot-desktop3.svg',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      descMobile:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descDesktop:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descPopup:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     skills: ['html', 'css', 'Ruby'],
     liveLink: '#',
@@ -91,9 +100,12 @@ const worksData = [
       screenshotDesktop: './images/snapshot-desktop4.svg',
     },
     description: {
-      descMobile: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descDesktop: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
-      descPopup: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
+      descMobile:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descDesktop:
+        'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+      descPopup:
+        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry.",
     },
     skills: ['html', 'css', 'Ruby', 'javascript'],
     liveLink: '#',
@@ -102,7 +114,9 @@ const worksData = [
 ];
 
 const myPortfolio = document.querySelector('.works-wrapper');
-const displayWorksData = worksData.map((works, index) => `<div class="card1-container">
+const displayWorksData = worksData
+  .map(
+    (works, index) => `<div class="card1-container">
 <div class="image-holder">
   <div class="mobile">
    <img 
@@ -134,11 +148,14 @@ const displayWorksData = worksData.map((works, index) => `<div class="card1-cont
    </ul>
    <button class="see-project-btn" id=${index}>See Project</button>
 </div>
-</div>`).join('');
+</div>`,
+  )
+  .join('');
 
 myPortfolio.innerHTML = displayWorksData;
 
-const popUpWindow = worksData.map((works) => `<div class="popup-container" id="popup">
+const popUpWindow = worksData.map(
+  (works) => `<div class="popup-container" id="popup">
 <div class="popup-holder">
    <div class="close-popup">
       <h1 class="work
@@ -181,7 +198,8 @@ const popUpWindow = worksData.map((works) => `<div class="popup-container" id="p
       </div>
    </div>
 </div>
-</div>`);
+</div>`,
+);
 
 const modal = document.getElementById('popup');
 modal.innerHTML = popUpWindow;
@@ -211,3 +229,21 @@ seeProject1.onclick = openPopUp;
 seeProject2.onclick = openPopUp;
 seeProject3.onclick = openPopUp;
 seeProject4.onclick = openPopUp;
+
+// Check E-mail Validity whether it is  Lowercase
+
+const formSubmission = document.querySelector('#contact-form');
+const enterEmail = document.querySelector('#mail');
+const invalidMessage = document.querySelector('.error-message');
+
+// adding eventlistener to the button
+formSubmission.addEventListener('submit', (event) => {
+  if (enterEmail.value !== enterEmail.value.toLowerCase()) {
+    event.preventDefault();
+    //  display error message if email is not in lower case
+    invalidMessage.classList.add('.error-message');
+    invalidMessage.innerHTML = 'Please  email must be in lowercase, try again!';
+  } else {
+    invalidMessage.textContent = '';
+  }
+});
