@@ -11,4 +11,13 @@ const populateLocalStorage = () => {
   window.localStorage.setItem('userData', JSON.stringify(formData));
 };
 // Retrieving the stored data in local storage
-
+const fetchData = () => {
+  const storageData = JSON.parse(window.localStorage.getItem('userData'));
+  userName.value = storageData.userName;
+  userEmail.value = storageData.userEmail;
+  userMsg.value = storageData.userMsg;
+};
+fetchData();
+userName.addEventListener('change', populateLocalStorage);
+userEmail.addEventListener('change', populateLocalStorage);
+userMsg.addEventListener('change', populateLocalStorage);
