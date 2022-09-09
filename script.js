@@ -237,4 +237,13 @@ const enterEmail = document.querySelector('#mail');
 const invalidMessage = document.querySelector('.error-message');
 
 // adding eventlistener to the button
-
+formSubmission.addEventListener('submit', (event) => {
+  if (enterEmail.value !== enterEmail.value.toLowerCase()) {
+    event.preventDefault();
+    //  display error message if email is not in lower case
+    invalidMessage.classList.add('.error-message');
+    invalidMessage.innerHTML = 'Please  email must be in lowercase, try again!';
+  } else {
+    invalidMessage.textContent = '';
+  }
+});
