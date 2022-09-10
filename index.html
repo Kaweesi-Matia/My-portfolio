@@ -163,10 +163,11 @@
             <p class="contact-desc">
                If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it 
             </p>
-            <form action="https://formspree.io/f/xbjbldyw" method="post" id="contact-form">
+            <form action="https://formspree.io/f/xbjbldyw" onsubmit="return DataStoring(document.getElementById('full-name').value , document.getElementById('mail').value, document.getElementById('message').value)"
+             method="post" id="contact-form">
                <div class="form-items">
                   <label for="name">
-                     <input type="text" id="name" placeholder="User name" maxlength="30" required>
+                     <input class="fullname" type="text" id="full-name" placeholder="User name" maxlength="30" required>
                   </label>
                   <label for="mail">
                      <input type="email" id="mail" placeholder="User email Address" required>
@@ -186,8 +187,8 @@
       <!-- Here begins the popup window -->
       <div class="popup-container" id="popup">
          </div>
-         
-<script src="./script.js"></script>
-<script src="./localstorage.js"></script>
+    <script src="./script.js"></script>
+    <script src="./localstorage.js"></script>
 </body>
+
 </html>
